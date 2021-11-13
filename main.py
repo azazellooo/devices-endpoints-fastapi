@@ -3,11 +3,11 @@ from fastapi import FastAPI, status
 from sqlalchemy import func
 from sqlalchemy.orm import Session
 
-from tools import is_anagram
-from serializers import DeviceCreate, AnagramWords, Endpoint, DeviceGet
-import models
-from settings import redis_init
-from db import SessionLocal
+from app.tools import is_anagram
+from app.serializers import DeviceCreate, AnagramWords, Endpoint, DeviceGet
+from app import models
+from app.settings import redis_init
+from app.db import SessionLocal
 
 
 app = FastAPI()
