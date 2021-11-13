@@ -26,6 +26,11 @@ pip install -r requirements.txt
 
 Create .env file and fill as showed in .env.example .
 
+setup the database:
+```bash
+python3 create_db.py
+```
+
 Run the project with command:
 ```bash
 uvicorn main:app --reload
